@@ -1,2 +1,2 @@
 # khangdzox.github.io
-I use Github Pages to study web development. Pls don't mind if you see something stupid here.
+The current content of the website is my Assignment 1 of Web Development unit at Swinburne University of Technology, Australia.

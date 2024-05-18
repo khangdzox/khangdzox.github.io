@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Development">
+    <meta name="keywords" content="HTML and CSS">
+    <meta name="author" content="Khang Vo">
+    <title>Animations</title>
+
+    <!-- Font used: Concert One, Fredoka, and Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Concert+One&family=Fredoka:wght@400;600&family=Nunito:wght@400;500;600;700;800;900&display=swap">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- External CSS Styles -->
+    <link rel="stylesheet" href="style/desktop.css" media="screen and (min-width: 757px)">
+    <link rel="stylesheet" href="style/mobile.css" media="screen and (max-width: 756px)">
+</head>
+<body>
+    <!-- Header/Navigation bar -->
+    <header id="header">
+        <!-- Animated decorators -->
+        <div class="decorator-container">
+            <div class="decorator-1">
+                <div class="bar large"></div>
+            </div>
+            <div class="decorator-2">
+                <div class="bar small"></div>
+            </div>
+            <div class="decorator-3">
+                <div class="bar small"></div>
+            </div>
+        </div>
+
+        <h1>Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-danang.html">About Danang</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="#0" class="active">Animations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="animations">
+        <article>
+            <h2>CSS Animations</h2>
+
+            <section>
+                <h3>Animation 1: Navigation/Header bar</h3>
+                <p>In Header bar, I added a decorators container to contain moving decorating elements. Inside, I added 3 decorator elements, in which there is a bar element. Those bar elements are rectangular div elements that were rotated and had transparent background color. I animated those bar to move left and right by adding animation to the decorators to change their <code>padding-left</code>.</p>
+                <p>The animation is in every Header bar on every webpage. <a href="#header">Link to the one on this page.</a></p>
+            </section>
+
+            <section>
+                <h3>Animation 2: Banner title animation</h3>
+                <p>In the banner on homepage, I added a <code>banner-title</code> element as the viewing box and <code>banner-title-container</code> to contain titles in different languages. Only the title that appear within the <code>banner-title</code> can be seen. The last title is the same as the first title. I animated the container to repeatedly move up 1 <code>line-height</code> and delay to make the title change. When it reaches to the last title, it immediately jump back to the first title and continue to move up, making the title looks like it always move up. The animation will pause when the user hover mouse over it.</p>
+                <p><a href="index.html#banner">Link to the animation on the banner on homepage.</a></p>
+            </section>
+
+            <section>
+                <h3>Animation 3: "Back to top" arrow animation</h3>
+                <p>At the bottom right corner of the page, I added a "back to top" button, which is an anchor element to the top of the page. The animation is nearly the same as the Banner title animation, and it plays once whenever the user is hovering on the button.</p>
+                <p>The animation is at the bottom right corner in every webpage. <a href="#back-to-top">Link to the one on this page.</a></p>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <p>
+            COS10005 - Web Development<br>
+            Swinburne University of Technology
+        </p>
+    </footer>
+
+    <!-- Back to top -->
+    <div class="back-to-top" id="back-to-top">
+        <a href="#" title="Back to top">
+            <i class="bi bi-arrow-up"></i>
+            <i class="bi bi-arrow-up"></i>
+        </a>
+    </div>
+</body>
+</html>

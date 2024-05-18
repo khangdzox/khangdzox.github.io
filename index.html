@@ -1,61 +1,187 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Whoopsie</title>
-        <link rel="stylesheet" href="/styles/style.css">
-    </head>
-    <body>
-        <header>
-            <table border="0">
-                <tr>
-                    <td>
-                        <img src="/images/my_img.JPG" height="80px">
-                    </td>
-                    <td>
-                        <h1 align="left">khangdzox.github.io</h1>
-                        <p align="left">I use <b>Github Pages</b> to study web development. Pls don't mind if you see something <i>stupid</i> here.</p>
-                    </td>
-                </tr>
-            </table>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Development">
+    <meta name="keywords" content="HTML and CSS">
+    <meta name="author" content="Khang Vo">
+    <title>Portfolio</title>
+
+    <!-- Font used: Concert One, Fredoka, and Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Concert+One&family=Fredoka:wght@400;600&family=Nunito:wght@400;500;600;700;800;900&display=swap">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- External CSS Styles -->
+    <link rel="stylesheet" href="style/desktop.css" media="screen and (min-width: 757px)">
+    <link rel="stylesheet" href="style/mobile.css" media="screen and (max-width: 756px)">
+</head>
+<body>
+    <!-- Header/Navigation bar -->
+    <header>
+        <!-- Animated decorators -->
+        <div class="decorator-container">
+            <div class="decorator-1">
+                <div class="bar large"></div>
+            </div>
+            <div class="decorator-2">
+                <div class="bar small"></div>
+            </div>
+            <div class="decorator-3">
+                <div class="bar small"></div>
+            </div>
+        </div>
+
+        <h1>Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#" id="here">Home</a></li>
-                <li><a href="/about/">About</a></li>
-                <li><a href="/ideas/">Ideas</a></li>
+                <li><a href="#0" class="active">Home</a></li>
+                <li><a href="about-danang.html">About Danang</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="animations.html">Animations</a></li>
             </ul>
         </nav>
-        <main>
-            <section>
-                <h1>About me</h1>
-                <p>My name is <b>Khang Vo</b>, and I was born in Mar 31, 2004. I live in <a href="https://www.google.com/maps/place/%C4%90%C3%A0+N%E1%BA%B5ng,+Vi%E1%BB%87t+Nam/" target="_blank">Da Nang City, Viet Nam</a>.</p>
-                <p><i>Continue reading About me <a href="/about/">here</a>.</i></p>
-            </section>
-            <hr>
-            <section>
-                <h1>Changelogs</h1>
-                <p>
-                    <b>Sep 22, 2022</b><br>
-                    - Change the style of Navigation bar<br>
-                    - Improve header with CSS (I just learned it hehe =) )
-                </p>
-                <p>
-                    <b>Sep 13, 2022</b><br>
-                    - Add navigation bar<br>
-                    - Add Ideas page<br>
-                    - Move About me to About me page
-                </p>
-                <p>
-                    <b>Sep 12, 2022</b><br>
-                    - Create index.html with simple information<br>
-                    - Add Changelogs
-                </p>
-                <p>
-                    <b>Sep 10, 2022</b><br>
-                    - Create website<br>
-                    - Create README.md
-                </p>
-            </section>
-        </main>
-        <footer></footer>
-    </body>
+    </header>
+
+    <main>
+        <!-- Welcome banner -->
+        <section class="banner" id="banner">
+            <div class="banner-title">
+                <div class="banner-title-container">
+                    <h1>Hi, I'm <span class="banner-name">Khang</span></h1>
+                    <h1>Xin chào, tôi là <span class="banner-name">Khang</span></h1>
+                    <h1>Bonjour, je suis <span class="banner-name">Khang</span></h1>
+                    <h1>Hi, I'm <span class="banner-name">Khang</span></h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- About me section -->
+        <section class="about">
+            <h2>About me</h2>
+
+            <div class="about-details">
+                <div class="img-container">
+                    <img src="images/avatar.jpg" alt="Khang's photo">
+                </div>
+
+                <ul>
+                    <li><span class="about-label">Full name:</span> Khang Vo</li>
+                    <li><span class="about-label">Gender:</span> Male</li>
+                    <li><span class="about-label">Day of Birth:</span> 31 March 2004</li>
+                    <li><span class="about-label">Place of Birth:</span> Da Nang, Viet Nam</li>
+                    <li><span class="about-label">University:</span> Swinburne University of Technology</li>
+                    <li><span class="about-label">Major:</span> Computer Science (Software Development)</li>
+                    <li><span class="about-label">Student ID:</span> 104220556</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Achievement Section -->
+        <section class="achievement">
+            <h2>Achievements</h2>
+
+            <div class="achievement-details">
+                <img class="prize-badge" src="images/First-Badge.png" alt="">
+                <div class="prize-desc">
+                    <h3 class="prize-title">U-Invent Season 3 - Technology Innovation for Environment</h3>
+                    <p class="prize-year">2020</p>
+                </div>
+
+                <img class="prize-badge" src="images/Second-Badge.png" alt="">
+                <div class="prize-desc">
+                    <h3 class="prize-title">23<sup>rd</sup> City-level Information Technology Contest</h3>
+                    <p class="prize-year">2020</p>
+                </div>
+
+                <img class="prize-badge" src="images/Third-Badge.png" alt="">
+                <div class="prize-desc">
+                    <h3 class="prize-title">City-level Excellent Student Contest in Physics</h3>
+                    <p class="prize-year">2022</p>
+                </div>
+
+                <img class="prize-badge" src="images/First-Badge.png" alt="">
+                <div class="prize-desc">
+                    <h3 class="prize-title">Industrial Link Competition</h3>
+                    <p class="prize-year">2022</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Favorite section -->
+        <section class="favorite">
+            <h2>Favorites</h2>
+
+            <div class="fav-card-container">
+                <div class="fav-card">
+                    <i class="bi bi-book-half icon"></i>
+                    <ul>
+                        <li>I See Yellow Flowers In Green Grass</li>
+                        <li>The Alchemist</li>
+                    </ul>
+                </div>
+
+                <div class="fav-card">
+                    <i class="bi bi-music-note-beamed icon"></i>
+                    <ul>
+                        <li>Somewhere Only We Know</li>
+                        <li>Past Lives</li>
+                        <li>All Is Soft Inside</li>
+                    </ul>
+                </div>
+
+                <div class="fav-card">
+                    <i class="bi bi-film icon"></i>
+                    <ul>
+                        <li>Interstellar</li>
+                        <li>Doctor Strange</li>
+                        <li>Three Idiots</li>
+                    </ul>
+                </div>
+
+                <div class="fav-card">
+                    <i class="bi bi-controller icon"></i>
+                    <ul>
+                        <li>Ori and the Will of the Wisps</li>
+                        <li>Hollow Knight</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact me section -->
+        <section class="contact">
+            <h2>Contact me</h2>
+            <p>Leave your contact information and messages here, and I will reach you later.</p>
+            <form action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php" method="post">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="email" name="email" id="email" placeholder="Email (required)" required>
+                <textarea name="msg" id="message" cols="30" rows="10" placeholder="Your message (required)" required></textarea>
+                <button type="reset">Clear form</button>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <p>
+            COS10005 - Web Development<br>
+            Swinburne University of Technology
+        </p>
+    </footer>
+
+    <!-- Back to top button -->
+    <div class="back-to-top">
+        <a href="#" title="Back to top">
+            <i class="bi bi-arrow-up"></i>
+            <i class="bi bi-arrow-up"></i>
+        </a>
+    </div>
+</body>
 </html>
